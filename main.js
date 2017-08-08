@@ -39,7 +39,7 @@ function f(s) {
 function performRegression() {
     regressionModel = new SLR(x, y);
     console.log(regressionModel.toString(3));
-    predictionOutput();
+    predictOutput();
 }
 
 function predictOutput() {
