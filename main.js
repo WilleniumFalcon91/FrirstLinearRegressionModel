@@ -18,3 +18,14 @@ csv()
         dressData();
         performRegression();
     });
+
+function dressData() {
+    csvData.forEach((row) => {
+        x.push(f(row.Radio));
+        y.push(f(row.Sales));
+    });
+}
+
+function f(s) {
+    return parseFloat(s);
+}
